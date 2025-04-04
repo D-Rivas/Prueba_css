@@ -243,78 +243,53 @@ main section .section-title::after {
 }
 
 
-/*-- Projects --*/
-
-#What_is_there_to_do .What_is_there_to_do-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 3fr));
-  gap: 1.4rem;
+.What_is_there_to_do-wrapper {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap; 
+  justify-content: center;
+  padding: 10px;
 }
 
-#What_is_there_to_do .What_is_there_to_do-card {
-  height: 400px;
-  background-color: #0f3460;
-  border-radius: 8px;
+.What_is_there_to_do-card {
+  background-color: #dbe3e6;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px;
 }
 
-#What_is_there_to_do .What_is_there_to_do-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
-}
+.What_is_there_to_do-card:hover {
+  transform: translateY(-5px); /* "salta" hacia arriba */
+  box-shadow: 0 8px 16px rgba(158, 155, 155, 0.2);
+ 
+}  
 
-#What_is_there_to_do .What_is_there_to_do-card .What_is_there_to_do-img {
-  height: 25%;
-  background-color: #0c2d55;
-}
-
-#What_is_there_to_do .What_is_there_to_do-card .What_is_there_to_do-img img {
+.What_is_there_to_do-img img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
-#What_is_there_to_do .What_is_there_to_do-card .What_is_there_to_do-content {
-  padding: 1.5rem;
+.What_is_there_to_do-content {
+  padding: 15px;
 }
 
-#What_is_there_to_do .What_is_there_to_do-card .What_is_there_to_do-content .What_is_there_to_do-title {
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
-  color: #A9B5DF;
+.What_is_there_to_do-title {
+  margin-top: 0;
+  font-size: 1.25rem;
+  margin-bottom: 1rem
 }
 
-#What_is_there_to_do .What_is_there_to_do-card .What_is_there_to_do-content .What_is_there_to_do-description {
-  color: var(--secondary-color);
-  margin-bottom: 1rem;
-  line-height: 1.5;
+.What_is_there_to_do-description {
+  font-size: 1rem;
+  color: #555;
 }
-
-#What_is_there_to_do .What_is_there_to_do-card .What_is_there_to_do-content .What_is_there_to_do-link {
-  display: inline-block;
-  text-decoration: none;
-  outline: 0;
-  cursor: pointer;
-  border: none;
-  padding: 0 56px;
-  height: 45px;
-  line-height: 45px;
-  border-radius: 7px;
-  background-color: #493D9E;
-  color: white;
-  font-weight: 400;
-  font-size: 16px;
-  box-shadow: 0 2px 4px 0 rgb(0 118 255 / 39%);
-  transition: background 0.2s ease,color 0.2s ease,box-shadow 0.2s ease;
-}
-
-#What_is_there_to_do .What_is_there_to_do-card .What_is_there_to_do-content .What_is_there_to_do-link:hover {
-  background: rgba(77, 85, 204, 0.9);
-  box-shadow: 0 3px 5px rgb(0 118 255 / 23%);
-  opacity: 0.9;
-}
-
 /*-- Contact --*/
 
 .register-section {
