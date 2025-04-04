@@ -267,7 +267,7 @@ main section .section-title::after {
 .What_is_there_to_do-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  background-color: #98cfff; /* azul clarito como efecto */
+  background-color: #8cc5f7; /* azul clarito como efecto */
   border: 2px solid #86e3f0
  
 }  
@@ -319,7 +319,7 @@ main section .section-title::after {
   .register-container {
     max-width: 600px;
     text-align: center;
-    color: rgb(232, 237, 241);
+    color: white;
   }
   
   /* TITULO */
@@ -404,15 +404,16 @@ main section .section-title::after {
 
 footer {
   grid-area: footer;
-  background-color: #16213e;
+  background-color: #4169a5;
   padding: 1.8rem 2.4em;
 }
 
 footer .footer-content {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 10px;
   flex: 1;
   min-width: 160px;
 }
@@ -422,53 +423,58 @@ footer .footer-content .footer-section {
   min-width: 160px;
 }
 
-footer .footer-content .footer-title {
-  font-size: 1.1rem;
-  margin-bottom: 1rem;
-  position: relative;
-  padding-bottom: 0.5rem;
+.contact-info h3,
+.social-media h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: #1a1818;
 }
 
-footer .footer-content .footer-title::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 50px;
-  height: 2px;
-  background-color: #6e42e5;
+.social-media a {
+  margin-right: 15px;
+  color: #1d1c1c;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
+
 
 footer .footer-content .footer-section {
   flex: 1;
   min-width: 160px;
 }
 
-footer .footer-socials .social-icons {
+footer .footer-socials .social-media {
   display: flex;
   gap: 1rem;
 }
 
-footer .footer-socials .social-icons .social-icon {
+footer .footer-socials .social-media .social-media {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  color: var(--primary-color);
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.1);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
-footer .footer-socials .social-icons .social-icon i {
-  font-size: 1.2rem;
+footer .footer-socials .social-media .social-media i {
+  font-size: 10px;
 }
 
-footer .footer-socials .social-icons .social-icon:hover {
-  background-color: #6e42e5;
+.social-media a:hover .fa-facebook {
+  color: #1877F2;
+}
+
+.social-media a:hover .fa-instagram {
+  color: #E1306C;
+}
+
+.social-media a:hover .fa-youtube {
+  color: #FF0000;
 }
 
 footer .copyright .data-copyright {
@@ -557,42 +563,6 @@ footer .copyright .data-copyright {
     gap: 1.2rem;
   }
 
-  /* Projects */
-
-  #project .project-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.2rem;
-  }
-
-  #project .project-card {
-    height: auto;
-  }
-
-  #project .project-card .project-img {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16/9;
-  }
-
-  #project .project-card .project-content {
-    padding: 1.2rem;
-  }
-
-  #project .project-card .project-content .project-title {
-    font-size: 1.2rem;
-  }
-
-  #project .project-card .project-content .project-description {
-    font-size: 0.95rem;
-    line-height: 1.3rem;
-  }
-
-  #project .project-card .project-content .project-link {
-    padding: 0 30px;
-    font-size: 0.95rem;
-  }
-
   /* Contact */
 
   #contact .contact-container {
@@ -602,10 +572,6 @@ footer .copyright .data-copyright {
 
   #contact .card-contact .name-contact {
     margin-top: 12px;
-  }
-
-  .label {
-    display: block;
   }
 
   #contact .card-contact .user-picture {
