@@ -343,7 +343,8 @@ main section .section-title::after {
   margin-bottom: 20px;
   color: #0f0f0f;
   font-weight: 500;
-  font-weight: bold
+  font-weight: bold;
+
 }
 
 /* Ajustes de los inputs */
@@ -381,7 +382,7 @@ input[type="email"] {
 
 /* Efecto al enfocar inputs */
 input:focus {
-  border-color: #1ba2fc;
+  border-color: #0a89dd;
   outline: none;
 }
 
